@@ -2,8 +2,6 @@
 
 > Une boîte à coucou qui détecte l'expression **"ah que coucou"** grâce à un modèle de wake word, actionne un servomoteur pour faire sortir un œuf, et joue le son "coucou !".
 
-https://github.com/user-attachments/assets/1cf843ea-135b-4ed7-b6f8-748fcd4e70f5
-
 Inspirée du running gag des [Guignols de l'info](https://www.youtube.com/watch?v=vwc_aIZz_1g) où Johnny Hallyday présentait une boîte mystérieuse à PPDA.
 
 ## Principe
@@ -28,6 +26,8 @@ Le tout fonctionne de manière autonome sur un Raspberry Pi, sans connexion inte
 | Boîte + œuf imprimés en 3D | Habillage et mécanisme |
 | Breadboard 170pts | Partage bus I2S |
 | Câbles Dupont F-F et M-F | Câblage |
+
+![](images/liste_de-courses.jpg)
 
 Coût total du projet : **30-40 €** (hors RPi 5 & imprimante 3D).
 
@@ -68,6 +68,48 @@ sounds/
 
 images/                 # Photos et captures d'écran
 ```
+
+## Câblage
+
+Tout se branche sur le header GPIO 40 broches du Raspberry Pi 5. Les composants audio (micro + ampli) partagent le même bus I2S ; le servo est piloté en PWM matériel sur GPIO13.
+
+**Servo SG90**
+
+| Fil servo | Broche RPi |
+|---|---|
+| VCC | 5V (broche 2) |
+| GND | GND (broche 14) |
+| Signal | GPIO13 / PWM (broche 33) |
+
+**Micro INMP441 (I2S, entrée audio)**
+
+| Broche INMP441 | Broche RPi |
+|---|---|
+| VDD | 3.3V (broche 1) |
+| GND | GND (broche 9) |
+| SCK (BCLK) | GPIO18 (broche 12), via breadboard |
+| WS (LRCLK) | GPIO19 (broche 35), via breadboard |
+| SD (DOUT) | GPIO20 (broche 38) |
+
+Si votre module INMP441 a une broche `L/R`, reliez-la à GND (canal gauche).
+
+**Ampli MAX98357A (I2S, sortie audio)**
+
+| Broche MAX98357A | Broche RPi |
+|---|---|
+| Vin | 5V (broche 4) |
+| GND | GND (broche 6) |
+| BCLK | GPIO18 (broche 12), via breadboard |
+| LRC | GPIO19 (broche 35), via breadboard |
+| DIN | GPIO21 (broche 40) |
+| SD | 3.3V (broche 17), pour activer la sortie |
+| Speaker + / - | Haut-parleur 4Ω 3W |
+
+**Le point important** : les deux horloges I2S, BCLK (GPIO18) et LRCLK (GPIO19), doivent être reliées **à la fois** au micro et à l'ampli. Un câble Dupont ne se dédoublant pas, on passe par la breadboard pour répartir chacune de ces deux lignes vers les deux composants.
+
+Les overlays nécessaires (`googlevoicehat-soundcard` pour l'I2S et `pwm-2chan` pour le servo) sont ajoutés dans `/boot/firmware/config.txt` par `setup.sh`.
+
+![](images/cablage_moche.jpg)
 
 ## Installation
 
