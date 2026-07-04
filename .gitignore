@@ -1,0 +1,17 @@
+*.mp4
+__pycache__
+.DS_Store
+venv/
+deactivate/
+
+# Données volumineuses générées localement (non versionnées)
+wakeword/model_cache/
+wakeword/training_cache/
+wakeword/training_data/
+wakeword/output/ah_que_coucou/
+wakeword/output/*.npy
+
+# .NET
+obj/
+bin/
+out/

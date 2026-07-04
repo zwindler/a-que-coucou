@@ -1,0 +1,27 @@
+FROM python:3.11-slim
+
+# Dépendances système nécessaires pour TTS (audio, compilateur)
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    libsndfile1 \
+    ffmpeg \
+    && rm -rf /var/lib/apt/lists/*
+
+# Installer TTS une seule fois dans l'image
+# transformers doit être < 4.40 : BeamSearchScorer supprimé de l'API publique en 4.40+
+# (TTS 0.22 en dépend via TTS/tts/layers/xtts/stream_generator.py)
+# torch >= 2.6 requis pour sm_120 (RTX 5080 / Blackwell) - sm_120 non supporté en 2.5
+# torch 2.6 a changé weights_only=True par défaut, incompatible avec les checkpoints
+# XTTS v2 (classes custom). On patche les deux appels torch.load dans TTS après install
+# pour forcer weights_only=False explicitement (fichiers de confiance, source connue).
+RUN pip install --no-cache-dir "TTS" "transformers<4.40" "torchcodec" && \
+    sed -i 's/torch\.load(speaker_file_path)/torch.load(speaker_file_path, weights_only=False)/' \
+        /usr/local/lib/python3.11/site-packages/TTS/tts/layers/xtts/xtts_manager.py && \
+    sed -i 's/return torch\.load(f, map_location=map_location, \*\*kwargs)/return torch.load(f, map_location=map_location, weights_only=False)/' \
+        /usr/local/lib/python3.11/site-packages/TTS/utils/io.py
+
+# Pré-accepter la licence CPML non-commerciale de Coqui XTTS v2
+# (évite le prompt interactif en mode non-TTY)
+ENV COQUI_TOS_AGREED=1
+
+WORKDIR /data

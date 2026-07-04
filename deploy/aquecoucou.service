@@ -1,0 +1,33 @@
+[Unit]
+Description=La Boîte à Coucou
+After=sound.target
+# Attendre que le driver I2S soit prêt
+After=sys-subsystem-sound-devices-controlC0.device
+
+[Service]
+User=pi
+WorkingDirectory=/home/pi/aquecoucou
+
+# GPIO13 doit être en mode Alt0 (PWM) - le dtoverlay ne le fait pas automatiquement sur RPi 5
+ExecStartPre=/usr/bin/pinctrl set 13 a0
+# Attendre que le device I2S soit prêt (peut prendre quelques secondes au boot)
+ExecStartPre=/bin/bash -c 'for i in $(seq 1 15); do arecord -l 2>/dev/null | grep -q googlevoicehat && exit 0; sleep 1; done; exit 1'
+
+ExecStart=/home/pi/aquecoucou/venv/bin/python aquecoucou.py --device 0
+
+Environment=SERVO_HIGH=0.025
+Environment=SERVO_LOW=0.130
+Environment="APLAY_ARGS=-D plughw:0,0"
+
+# Redémarrage automatique en cas de crash
+Restart=on-failure
+RestartSec=5
+
+# Laisser le temps au driver ALSA de se libérer avant restart
+TimeoutStopSec=5
+
+# Filtrer les logs onnxruntime parasites
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

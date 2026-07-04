@@ -1,0 +1,60 @@
+FROM python:3.11-slim
+
+# Dépendances système
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    libsndfile1 \
+    ffmpeg \
+    git \
+    wget \
+    espeak-ng \
+    espeak-ng-data \
+    && rm -rf /var/lib/apt/lists/*
+
+# Cloner openWakeWord (version complète avec train.py et les données)
+# On pigne le commit utilisé pour reproductibilité
+RUN git clone --depth=1 https://github.com/dscripka/openWakeWord.git /opt/openwakeword
+
+# Installer openWakeWord en mode éditable + toutes ses dépendances d'entraînement
+# Note : on n'installe PAS piper-sample-generator ni piper-phonemizer
+# (uniquement nécessaires pour --generate_clips, étape déjà faite avec Coqui XTTS v2)
+# Note : on n'installe PAS tensorflow/onnx_tf
+# (uniquement nécessaires pour l'export .tflite ; on n'utilise que .onnx pour oww 0.4.0)
+RUN pip install --no-cache-dir -e /opt/openwakeword && \
+    pip install --no-cache-dir \
+        "numpy<2" \
+        mutagen==1.47.0 \
+        torchinfo==1.8.0 \
+        "torchmetrics==1.2.0" \
+        "speechbrain==0.5.14" \
+        "audiomentations==0.33.0" \
+        "torch-audiomentations==0.12.0" \
+        acoustics==0.2.6 \
+        pronouncing==0.2.0 \
+        "pyarrow<14" \
+        "datasets==2.14.6" \
+        "deep-phonemizer==0.0.19" \
+        "scipy<1.15" \
+        tqdm \
+        pyyaml \
+        torchcodec \
+        onnxscript
+
+# Télécharger les modèles ONNX de base d'openwakeword (melspectrogram, embedding, etc.)
+# Nécessaire pour compute_features_from_generator() lors de l'augmentation
+RUN python3 -c "import openwakeword; openwakeword.utils.download_models()"
+
+# Patch bug upstream train.py : default="False" (string) avec action="store_true"
+# -> convert_to_tflite vaut toujours True car toute string non-vide est truthy.
+# On remplace default="False" par default=False (booléen).
+RUN sed -i 's/default="False",\r\{0,1\}$/default=False,/' /opt/openwakeword/openwakeword/train.py && \
+    grep -n "default=" /opt/openwakeword/openwakeword/train.py | grep -v "^Binary"
+
+# Patch torch.load weights_only (même problème que pour TTS : torch 2.6+ / Blackwell)
+# openwakeword utilise torch.load dans openwakeword/utils.py pour charger les modèles ONNX -> poids
+RUN find /opt/openwakeword -name "*.py" -exec grep -l "torch\.load" {} \; | \
+    xargs -I{} sed -i \
+        's/torch\.load(\(.*\))/torch.load(\1, weights_only=False)/g' \
+        {} 2>/dev/null || true
+
+WORKDIR /work
