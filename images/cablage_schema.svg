@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1010" height="790" viewBox="0 0 1010 790" font-family="Helvetica,Arial,sans-serif">
+<rect width="1010" height="790" fill="#fff"/>
+<text x="24" y="36" font-size="22" font-weight="700" fill="#111">La Boîte à Coucou &#8212; câblage (Raspberry Pi 5)</text>
+<rect x="30" y="86" width="250" height="608" rx="14" fill="#f8f9fa" stroke="#495057" stroke-width="1.6"/>
+<text x="155.0" y="108" font-size="15" font-weight="700" fill="#111" text-anchor="middle">Raspberry Pi 5</text>
+<text x="155.0" y="124" font-size="10" font-weight="400" fill="#868e96" text-anchor="middle">header GPIO 40 broches</text>
+<rect x="600" y="106" width="380" height="168" rx="12" fill="#e7f5ff" stroke="#1971c2" stroke-width="1.6"/>
+<text x="750" y="126" font-size="14" font-weight="700" fill="#111" text-anchor="start">Micro INMP441</text>
+<text x="750" y="141" font-size="10" font-weight="400" fill="#868e96" text-anchor="start">I2S &#8212; entrée audio</text>
+<line x1="280" y1="130" x2="600" y2="130" stroke="#f76707" stroke-width="3.2" stroke-linecap="round"/>
+<circle cx="280" cy="130" r="5" fill="#f76707"/>
+<circle cx="600" cy="130" r="5" fill="#f76707"/>
+<text x="46" y="134" font-size="12" font-weight="600" fill="#f76707" text-anchor="start">pin 1 &#183; 3V3</text>
+<text x="616" y="134" font-size="12.5" font-weight="600" fill="#111" text-anchor="start">VDD</text>
+<line x1="280" y1="160" x2="600" y2="160" stroke="#212529" stroke-width="3.2" stroke-linecap="round"/>
+<circle cx="280" cy="160" r="5" fill="#212529"/>
+<circle cx="600" cy="160" r="5" fill="#212529"/>
+<text x="46" y="164" font-size="12" font-weight="600" fill="#212529" text-anchor="start">GND</text>
+<text x="616" y="164" font-size="12.5" font-weight="600" fill="#111" text-anchor="start">GND</text>
+<line x1="280" y1="190" x2="600" y2="190" stroke="#1971c2" stroke-width="3.2" stroke-linecap="round"/>
+<circle cx="280" cy="190" r="5" fill="#1971c2"/>
+<circle cx="600" cy="190" r="5" fill="#1971c2"/>
+<text x="46" y="194" font-size="12" font-weight="600" fill="#1971c2" text-anchor="start">pin 12 &#183; GPIO18  (breadboard)</text>
+<text x="616" y="194" font-size="12.5" font-weight="600" fill="#111" text-anchor="start">SCK / BCLK</text>
+<line x1="280" y1="220" x2="600" y2="220" stroke="#2f9e44" stroke-width="3.2" stroke-linecap="round"/>
+<circle cx="280" cy="220" r="5" fill="#2f9e44"/>
+<circle cx="600" cy="220" r="5" fill="#2f9e44"/>
+<text x="46" y="224" font-size="12" font-weight="600" fill="#2f9e44" text-anchor="start">pin 35 &#183; GPIO19  (breadboard)</text>
+<text x="616" y="224" font-size="12.5" font-weight="600" fill="#111" text-anchor="start">WS / LRCLK</text>
+<line x1="280" y1="250" x2="600" y2="250" stroke="#9c36b5" stroke-width="3.2" stroke-linecap="round"/>
+<circle cx="280" cy="250" r="5" fill="#9c36b5"/>
+<circle cx="600" cy="250" r="5" fill="#9c36b5"/>
+<text x="46" y="254" font-size="12" font-weight="600" fill="#9c36b5" text-anchor="start">pin 38 &#183; GPIO20</text>
+<text x="616" y="254" font-size="12.5" font-weight="600" fill="#111" text-anchor="start">SD (DOUT)</text>
+<rect x="600" y="330" width="380" height="198" rx="12" fill="#e7f5ff" stroke="#1971c2" stroke-width="1.6"/>
+<text x="750" y="350" font-size="14" font-weight="700" fill="#111" text-anchor="start">Ampli MAX98357A</text>
+<text x="750" y="365" font-size="10" font-weight="400" fill="#868e96" text-anchor="start">I2S &#8212; sortie audio (+ HP 4&#937; 3W)</text>
+<line x1="280" y1="354" x2="600" y2="354" stroke="#e03131" stroke-width="3.2" stroke-linecap="round"/>
+<circle cx="280" cy="354" r="5" fill="#e03131"/>
+<circle cx="600" cy="354" r="5" fill="#e03131"/>
+<text x="46" y="358" font-size="12" font-weight="600" fill="#e03131" text-anchor="start">pin 4 &#183; 5V</text>
+<text x="616" y="358" font-size="12.5" font-weight="600" fill="#111" text-anchor="start">Vin</text>
+<line x1="280" y1="384" x2="600" y2="384" stroke="#212529" stroke-width="3.2" stroke-linecap="round"/>
+<circle cx="280" cy="384" r="5" fill="#212529"/>
+<circle cx="600" cy="384" r="5" fill="#212529"/>
+<text x="46" y="388" font-size="12" font-weight="600" fill="#212529" text-anchor="start">GND</text>
+<text x="616" y="388" font-size="12.5" font-weight="600" fill="#111" text-anchor="start">GND</text>
+<line x1="280" y1="414" x2="600" y2="414" stroke="#1971c2" stroke-width="3.2" stroke-linecap="round"/>
+<circle cx="280" cy="414" r="5" fill="#1971c2"/>
+<circle cx="600" cy="414" r="5" fill="#1971c2"/>
+<text x="46" y="418" font-size="12" font-weight="600" fill="#1971c2" text-anchor="start">pin 12 &#183; GPIO18  (breadboard)</text>
+<text x="616" y="418" font-size="12.5" font-weight="600" fill="#111" text-anchor="start">BCLK</text>
+<line x1="280" y1="444" x2="600" y2="444" stroke="#2f9e44" stroke-width="3.2" stroke-linecap="round"/>
+<circle cx="280" cy="444" r="5" fill="#2f9e44"/>
+<circle cx="600" cy="444" r="5" fill="#2f9e44"/>
+<text x="46" y="448" font-size="12" font-weight="600" fill="#2f9e44" text-anchor="start">pin 35 &#183; GPIO19  (breadboard)</text>
+<text x="616" y="448" font-size="12.5" font-weight="600" fill="#111" text-anchor="start">LRC</text>
+<line x1="280" y1="474" x2="600" y2="474" stroke="#c2255c" stroke-width="3.2" stroke-linecap="round"/>
+<circle cx="280" cy="474" r="5" fill="#c2255c"/>
+<circle cx="600" cy="474" r="5" fill="#c2255c"/>
+<text x="46" y="478" font-size="12" font-weight="600" fill="#c2255c" text-anchor="start">pin 40 &#183; GPIO21</text>
+<text x="616" y="478" font-size="12.5" font-weight="600" fill="#111" text-anchor="start">DIN</text>
+<line x1="280" y1="504" x2="600" y2="504" stroke="#f76707" stroke-width="3.2" stroke-linecap="round"/>
+<circle cx="280" cy="504" r="5" fill="#f76707"/>
+<circle cx="600" cy="504" r="5" fill="#f76707"/>
+<text x="46" y="508" font-size="12" font-weight="600" fill="#f76707" text-anchor="start">pin 17 &#183; 3V3</text>
+<text x="616" y="508" font-size="12.5" font-weight="600" fill="#111" text-anchor="start">SD (enable)</text>
+<rect x="600" y="584" width="380" height="108" rx="12" fill="#e7f5ff" stroke="#1971c2" stroke-width="1.6"/>
+<text x="750" y="604" font-size="14" font-weight="700" fill="#111" text-anchor="start">Servo SG90</text>
+<text x="750" y="619" font-size="10" font-weight="400" fill="#868e96" text-anchor="start">PWM matériel</text>
+<line x1="280" y1="608" x2="600" y2="608" stroke="#e03131" stroke-width="3.2" stroke-linecap="round"/>
+<circle cx="280" cy="608" r="5" fill="#e03131"/>
+<circle cx="600" cy="608" r="5" fill="#e03131"/>
+<text x="46" y="612" font-size="12" font-weight="600" fill="#e03131" text-anchor="start">pin 2 &#183; 5V</text>
+<text x="616" y="612" font-size="12.5" font-weight="600" fill="#111" text-anchor="start">VCC</text>
+<line x1="280" y1="638" x2="600" y2="638" stroke="#212529" stroke-width="3.2" stroke-linecap="round"/>
+<circle cx="280" cy="638" r="5" fill="#212529"/>
+<circle cx="600" cy="638" r="5" fill="#212529"/>
+<text x="46" y="642" font-size="12" font-weight="600" fill="#212529" text-anchor="start">GND</text>
+<text x="616" y="642" font-size="12.5" font-weight="600" fill="#111" text-anchor="start">GND</text>
+<line x1="280" y1="668" x2="600" y2="668" stroke="#f2b705" stroke-width="3.2" stroke-linecap="round"/>
+<circle cx="280" cy="668" r="5" fill="#f2b705"/>
+<circle cx="600" cy="668" r="5" fill="#f2b705"/>
+<text x="46" y="672" font-size="12" font-weight="600" fill="#f2b705" text-anchor="start">pin 33 &#183; GPIO13</text>
+<text x="616" y="672" font-size="12.5" font-weight="600" fill="#111" text-anchor="start">Signal</text>
+<text x="24" y="714" font-size="12" font-weight="600" fill="#111" text-anchor="start">Astuce : GPIO18 (BCLK) et GPIO19 (LRCLK) alimentent À LA FOIS le micro et l'ampli.</text>
+<text x="24" y="732" font-size="12" font-weight="400" fill="#495057" text-anchor="start">Un fil Dupont ne se dédoublant pas, la breadboard répartit chaque horloge vers les deux composants.</text>
+<line x1="24" y1="764" x2="46" y2="764" stroke="#e03131" stroke-width="4"/>
+<text x="52" y="768" font-size="11" font-weight="500" fill="#495057" text-anchor="start">5V</text>
+<line x1="136" y1="764" x2="158" y2="764" stroke="#f76707" stroke-width="4"/>
+<text x="164" y="768" font-size="11" font-weight="500" fill="#495057" text-anchor="start">3V3</text>
+<line x1="248" y1="764" x2="270" y2="764" stroke="#212529" stroke-width="4"/>
+<text x="276" y="768" font-size="11" font-weight="500" fill="#495057" text-anchor="start">GND</text>
+<line x1="360" y1="764" x2="382" y2="764" stroke="#1971c2" stroke-width="4"/>
+<text x="388" y="768" font-size="11" font-weight="500" fill="#495057" text-anchor="start">BCLK</text>
+<line x1="472" y1="764" x2="494" y2="764" stroke="#2f9e44" stroke-width="4"/>
+<text x="500" y="768" font-size="11" font-weight="500" fill="#495057" text-anchor="start">LRCLK</text>
+<line x1="584" y1="764" x2="606" y2="764" stroke="#9c36b5" stroke-width="4"/>
+<text x="612" y="768" font-size="11" font-weight="500" fill="#495057" text-anchor="start">data micro</text>
+<line x1="696" y1="764" x2="718" y2="764" stroke="#c2255c" stroke-width="4"/>
+<text x="724" y="768" font-size="11" font-weight="500" fill="#495057" text-anchor="start">data ampli</text>
+<line x1="808" y1="764" x2="830" y2="764" stroke="#f2b705" stroke-width="4"/>
+<text x="836" y="768" font-size="11" font-weight="500" fill="#495057" text-anchor="start">PWM</text>
+</svg>

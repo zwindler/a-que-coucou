@@ -73,6 +73,12 @@ images/                 # Photos et captures d'écran
 
 Tout se branche sur le header GPIO 40 broches du Raspberry Pi 5. Les composants audio (micro + ampli) partagent le même bus I2S ; le servo est piloté en PWM matériel sur GPIO13.
 
+![Schéma de câblage](images/cablage_schema.png)
+
+Et la position physique des broches sur le header (pour ne pas se tromper au branchement) :
+
+![Header GPIO 40 broches - broches utilisées en couleur](images/cablage_header.png)
+
 **Servo SG90**
 
 | Fil servo | Broche RPi |

@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="760" viewBox="0 0 820 760" font-family="Helvetica,Arial,sans-serif">
+<rect width="820" height="760" fill="#fff"/>
+<text x="24" y="34" font-size="20" font-weight="700" fill="#111" text-anchor="start">Header GPIO 40 broches - vue physique</text>
+<text x="24" y="56" font-size="12" font-weight="400" fill="#868e96" text-anchor="start">Broches utilisées en couleur. Pin 1 = coin repéré (pad carré) sur la carte.</text>
+<rect x="343.0" y="81.0" width="58" height="22" rx="2" fill="#f76707" stroke="#adb5bd" stroke-width="1"/>
+<text x="372" y="96" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">1</text>
+<text x="335.0" y="96" font-size="10" font-weight="500" fill="#868e96" text-anchor="end">3V3</text>
+<text x="273.0" y="96" font-size="12" font-weight="700" fill="#f76707" text-anchor="end">micro VDD</text>
+<rect x="419.0" y="81.0" width="58" height="22" rx="10" fill="#e03131" stroke="#adb5bd" stroke-width="1"/>
+<text x="448" y="96" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">2</text>
+<text x="485.0" y="96" font-size="10" font-weight="500" fill="#868e96" text-anchor="start">5V</text>
+<text x="547.0" y="96" font-size="12" font-weight="700" fill="#e03131" text-anchor="start">servo VCC</text>
+<rect x="343.0" y="112.0" width="58" height="22" rx="10" fill="#dee2e6" stroke="#adb5bd" stroke-width="1"/>
+<text x="372" y="127" font-size="11" font-weight="700" fill="#adb5bd" text-anchor="middle">3</text>
+<text x="335.0" y="127" font-size="10" font-weight="500" fill="#868e96" text-anchor="end">GPIO2</text>
+<rect x="419.0" y="112.0" width="58" height="22" rx="10" fill="#e03131" stroke="#adb5bd" stroke-width="1"/>
+<text x="448" y="127" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">4</text>
+<text x="485.0" y="127" font-size="10" font-weight="500" fill="#868e96" text-anchor="start">5V</text>
+<text x="547.0" y="127" font-size="12" font-weight="700" fill="#e03131" text-anchor="start">ampli Vin</text>
+<rect x="343.0" y="143.0" width="58" height="22" rx="10" fill="#dee2e6" stroke="#adb5bd" stroke-width="1"/>
+<text x="372" y="158" font-size="11" font-weight="700" fill="#adb5bd" text-anchor="middle">5</text>
+<text x="335.0" y="158" font-size="10" font-weight="500" fill="#868e96" text-anchor="end">GPIO3</text>
+<rect x="419.0" y="143.0" width="58" height="22" rx="10" fill="#212529" stroke="#adb5bd" stroke-width="1"/>
+<text x="448" y="158" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">6</text>
+<text x="485.0" y="158" font-size="10" font-weight="500" fill="#868e96" text-anchor="start">GND</text>
+<text x="547.0" y="158" font-size="12" font-weight="700" fill="#212529" text-anchor="start">GND (ampli)</text>
+<rect x="343.0" y="174.0" width="58" height="22" rx="10" fill="#dee2e6" stroke="#adb5bd" stroke-width="1"/>
+<text x="372" y="189" font-size="11" font-weight="700" fill="#adb5bd" text-anchor="middle">7</text>
+<text x="335.0" y="189" font-size="10" font-weight="500" fill="#868e96" text-anchor="end">GPIO4</text>
+<rect x="419.0" y="174.0" width="58" height="22" rx="10" fill="#dee2e6" stroke="#adb5bd" stroke-width="1"/>
+<text x="448" y="189" font-size="11" font-weight="700" fill="#adb5bd" text-anchor="middle">8</text>
+<text x="485.0" y="189" font-size="10" font-weight="500" fill="#868e96" text-anchor="start">GPIO14</text>
+<rect x="343.0" y="205.0" width="58" height="22" rx="10" fill="#212529" stroke="#adb5bd" stroke-width="1"/>
+<text x="372" y="220" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">9</text>
+<text x="335.0" y="220" font-size="10" font-weight="500" fill="#868e96" text-anchor="end">GND</text>
+<text x="273.0" y="220" font-size="12" font-weight="700" fill="#212529" text-anchor="end">GND (micro)</text>
+<rect x="419.0" y="205.0" width="58" height="22" rx="10" fill="#dee2e6" stroke="#adb5bd" stroke-width="1"/>
+<text x="448" y="220" font-size="11" font-weight="700" fill="#adb5bd" text-anchor="middle">10</text>
+<text x="485.0" y="220" font-size="10" font-weight="500" fill="#868e96" text-anchor="start">GPIO15</text>
+<rect x="343.0" y="236.0" width="58" height="22" rx="10" fill="#dee2e6" stroke="#adb5bd" stroke-width="1"/>
+<text x="372" y="251" font-size="11" font-weight="700" fill="#adb5bd" text-anchor="middle">11</text>
+<text x="335.0" y="251" font-size="10" font-weight="500" fill="#868e96" text-anchor="end">GPIO17</text>
+<rect x="419.0" y="236.0" width="58" height="22" rx="10" fill="#1971c2" stroke="#adb5bd" stroke-width="1"/>
+<text x="448" y="251" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">12</text>
+<text x="485.0" y="251" font-size="10" font-weight="500" fill="#868e96" text-anchor="start">GPIO18</text>
+<text x="547.0" y="251" font-size="12" font-weight="700" fill="#1971c2" text-anchor="start">BCLK -> micro+ampli</text>
+<rect x="343.0" y="267.0" width="58" height="22" rx="10" fill="#dee2e6" stroke="#adb5bd" stroke-width="1"/>
+<text x="372" y="282" font-size="11" font-weight="700" fill="#adb5bd" text-anchor="middle">13</text>
+<text x="335.0" y="282" font-size="10" font-weight="500" fill="#868e96" text-anchor="end">GPIO27</text>
+<rect x="419.0" y="267.0" width="58" height="22" rx="10" fill="#212529" stroke="#adb5bd" stroke-width="1"/>
+<text x="448" y="282" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">14</text>
+<text x="485.0" y="282" font-size="10" font-weight="500" fill="#868e96" text-anchor="start">GND</text>
+<text x="547.0" y="282" font-size="12" font-weight="700" fill="#212529" text-anchor="start">GND (servo)</text>
+<rect x="343.0" y="298.0" width="58" height="22" rx="10" fill="#dee2e6" stroke="#adb5bd" stroke-width="1"/>
+<text x="372" y="313" font-size="11" font-weight="700" fill="#adb5bd" text-anchor="middle">15</text>
+<text x="335.0" y="313" font-size="10" font-weight="500" fill="#868e96" text-anchor="end">GPIO22</text>
+<rect x="419.0" y="298.0" width="58" height="22" rx="10" fill="#dee2e6" stroke="#adb5bd" stroke-width="1"/>
+<text x="448" y="313" font-size="11" font-weight="700" fill="#adb5bd" text-anchor="middle">16</text>
+<text x="485.0" y="313" font-size="10" font-weight="500" fill="#868e96" text-anchor="start">GPIO23</text>
+<rect x="343.0" y="329.0" width="58" height="22" rx="10" fill="#f76707" stroke="#adb5bd" stroke-width="1"/>
+<text x="372" y="344" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">17</text>
+<text x="335.0" y="344" font-size="10" font-weight="500" fill="#868e96" text-anchor="end">3V3</text>
+<text x="273.0" y="344" font-size="12" font-weight="700" fill="#f76707" text-anchor="end">ampli SD</text>
+<rect x="419.0" y="329.0" width="58" height="22" rx="10" fill="#dee2e6" stroke="#adb5bd" stroke-width="1"/>
+<text x="448" y="344" font-size="11" font-weight="700" fill="#adb5bd" text-anchor="middle">18</text>
+<text x="485.0" y="344" font-size="10" font-weight="500" fill="#868e96" text-anchor="start">GPIO24</text>
+<rect x="343.0" y="360.0" width="58" height="22" rx="10" fill="#dee2e6" stroke="#adb5bd" stroke-width="1"/>
+<text x="372" y="375" font-size="11" font-weight="700" fill="#adb5bd" text-anchor="middle">19</text>
+<text x="335.0" y="375" font-size="10" font-weight="500" fill="#868e96" text-anchor="end">GPIO10</text>
+<rect x="419.0" y="360.0" width="58" height="22" rx="10" fill="#dee2e6" stroke="#adb5bd" stroke-width="1"/>
+<text x="448" y="375" font-size="11" font-weight="700" fill="#adb5bd" text-anchor="middle">20</text>
+<text x="485.0" y="375" font-size="10" font-weight="500" fill="#868e96" text-anchor="start">GND</text>
+<rect x="343.0" y="391.0" width="58" height="22" rx="10" fill="#dee2e6" stroke="#adb5bd" stroke-width="1"/>
+<text x="372" y="406" font-size="11" font-weight="700" fill="#adb5bd" text-anchor="middle">21</text>
+<text x="335.0" y="406" font-size="10" font-weight="500" fill="#868e96" text-anchor="end">GPIO9</text>
+<rect x="419.0" y="391.0" width="58" height="22" rx="10" fill="#dee2e6" stroke="#adb5bd" stroke-width="1"/>
+<text x="448" y="406" font-size="11" font-weight="700" fill="#adb5bd" text-anchor="middle">22</text>
+<text x="485.0" y="406" font-size="10" font-weight="500" fill="#868e96" text-anchor="start">GPIO25</text>
+<rect x="343.0" y="422.0" width="58" height="22" rx="10" fill="#dee2e6" stroke="#adb5bd" stroke-width="1"/>
+<text x="372" y="437" font-size="11" font-weight="700" fill="#adb5bd" text-anchor="middle">23</text>
+<text x="335.0" y="437" font-size="10" font-weight="500" fill="#868e96" text-anchor="end">GPIO11</text>
+<rect x="419.0" y="422.0" width="58" height="22" rx="10" fill="#dee2e6" stroke="#adb5bd" stroke-width="1"/>
+<text x="448" y="437" font-size="11" font-weight="700" fill="#adb5bd" text-anchor="middle">24</text>
+<text x="485.0" y="437" font-size="10" font-weight="500" fill="#868e96" text-anchor="start">GPIO8</text>
+<rect x="343.0" y="453.0" width="58" height="22" rx="10" fill="#dee2e6" stroke="#adb5bd" stroke-width="1"/>
+<text x="372" y="468" font-size="11" font-weight="700" fill="#adb5bd" text-anchor="middle">25</text>
+<text x="335.0" y="468" font-size="10" font-weight="500" fill="#868e96" text-anchor="end">GND</text>
+<rect x="419.0" y="453.0" width="58" height="22" rx="10" fill="#dee2e6" stroke="#adb5bd" stroke-width="1"/>
+<text x="448" y="468" font-size="11" font-weight="700" fill="#adb5bd" text-anchor="middle">26</text>
+<text x="485.0" y="468" font-size="10" font-weight="500" fill="#868e96" text-anchor="start">GPIO7</text>
+<rect x="343.0" y="484.0" width="58" height="22" rx="10" fill="#dee2e6" stroke="#adb5bd" stroke-width="1"/>
+<text x="372" y="499" font-size="11" font-weight="700" fill="#adb5bd" text-anchor="middle">27</text>
+<text x="335.0" y="499" font-size="10" font-weight="500" fill="#868e96" text-anchor="end">GPIO0</text>
+<rect x="419.0" y="484.0" width="58" height="22" rx="10" fill="#dee2e6" stroke="#adb5bd" stroke-width="1"/>
+<text x="448" y="499" font-size="11" font-weight="700" fill="#adb5bd" text-anchor="middle">28</text>
+<text x="485.0" y="499" font-size="10" font-weight="500" fill="#868e96" text-anchor="start">GPIO1</text>
+<rect x="343.0" y="515.0" width="58" height="22" rx="10" fill="#dee2e6" stroke="#adb5bd" stroke-width="1"/>
+<text x="372" y="530" font-size="11" font-weight="700" fill="#adb5bd" text-anchor="middle">29</text>
+<text x="335.0" y="530" font-size="10" font-weight="500" fill="#868e96" text-anchor="end">GPIO5</text>
+<rect x="419.0" y="515.0" width="58" height="22" rx="10" fill="#dee2e6" stroke="#adb5bd" stroke-width="1"/>
+<text x="448" y="530" font-size="11" font-weight="700" fill="#adb5bd" text-anchor="middle">30</text>
+<text x="485.0" y="530" font-size="10" font-weight="500" fill="#868e96" text-anchor="start">GND</text>
+<rect x="343.0" y="546.0" width="58" height="22" rx="10" fill="#dee2e6" stroke="#adb5bd" stroke-width="1"/>
+<text x="372" y="561" font-size="11" font-weight="700" fill="#adb5bd" text-anchor="middle">31</text>
+<text x="335.0" y="561" font-size="10" font-weight="500" fill="#868e96" text-anchor="end">GPIO6</text>
+<rect x="419.0" y="546.0" width="58" height="22" rx="10" fill="#dee2e6" stroke="#adb5bd" stroke-width="1"/>
+<text x="448" y="561" font-size="11" font-weight="700" fill="#adb5bd" text-anchor="middle">32</text>
+<text x="485.0" y="561" font-size="10" font-weight="500" fill="#868e96" text-anchor="start">GPIO12</text>
+<rect x="343.0" y="577.0" width="58" height="22" rx="10" fill="#f2b705" stroke="#adb5bd" stroke-width="1"/>
+<text x="372" y="592" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">33</text>
+<text x="335.0" y="592" font-size="10" font-weight="500" fill="#868e96" text-anchor="end">GPIO13</text>
+<text x="273.0" y="592" font-size="12" font-weight="700" fill="#f2b705" text-anchor="end">servo Signal</text>
+<rect x="419.0" y="577.0" width="58" height="22" rx="10" fill="#dee2e6" stroke="#adb5bd" stroke-width="1"/>
+<text x="448" y="592" font-size="11" font-weight="700" fill="#adb5bd" text-anchor="middle">34</text>
+<text x="485.0" y="592" font-size="10" font-weight="500" fill="#868e96" text-anchor="start">GND</text>
+<rect x="343.0" y="608.0" width="58" height="22" rx="10" fill="#2f9e44" stroke="#adb5bd" stroke-width="1"/>
+<text x="372" y="623" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">35</text>
+<text x="335.0" y="623" font-size="10" font-weight="500" fill="#868e96" text-anchor="end">GPIO19</text>
+<text x="273.0" y="623" font-size="12" font-weight="700" fill="#2f9e44" text-anchor="end">LRCLK -> micro+ampli</text>
+<rect x="419.0" y="608.0" width="58" height="22" rx="10" fill="#dee2e6" stroke="#adb5bd" stroke-width="1"/>
+<text x="448" y="623" font-size="11" font-weight="700" fill="#adb5bd" text-anchor="middle">36</text>
+<text x="485.0" y="623" font-size="10" font-weight="500" fill="#868e96" text-anchor="start">GPIO16</text>
+<rect x="343.0" y="639.0" width="58" height="22" rx="10" fill="#dee2e6" stroke="#adb5bd" stroke-width="1"/>
+<text x="372" y="654" font-size="11" font-weight="700" fill="#adb5bd" text-anchor="middle">37</text>
+<text x="335.0" y="654" font-size="10" font-weight="500" fill="#868e96" text-anchor="end">GPIO26</text>
+<rect x="419.0" y="639.0" width="58" height="22" rx="10" fill="#9c36b5" stroke="#adb5bd" stroke-width="1"/>
+<text x="448" y="654" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">38</text>
+<text x="485.0" y="654" font-size="10" font-weight="500" fill="#868e96" text-anchor="start">GPIO20</text>
+<text x="547.0" y="654" font-size="12" font-weight="700" fill="#9c36b5" text-anchor="start">micro SD/DOUT</text>
+<rect x="343.0" y="670.0" width="58" height="22" rx="10" fill="#dee2e6" stroke="#adb5bd" stroke-width="1"/>
+<text x="372" y="685" font-size="11" font-weight="700" fill="#adb5bd" text-anchor="middle">39</text>
+<text x="335.0" y="685" font-size="10" font-weight="500" fill="#868e96" text-anchor="end">GND</text>
+<rect x="419.0" y="670.0" width="58" height="22" rx="10" fill="#c2255c" stroke="#adb5bd" stroke-width="1"/>
+<text x="448" y="685" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">40</text>
+<text x="485.0" y="685" font-size="10" font-weight="500" fill="#868e96" text-anchor="start">GPIO21</text>
+<text x="547.0" y="685" font-size="12" font-weight="700" fill="#c2255c" text-anchor="start">ampli DIN</text>
+<rect x="24" y="726" width="16" height="12" rx="3" fill="#e03131"/>
+<text x="46" y="736" font-size="10.5" font-weight="500" fill="#495057" text-anchor="start">5V</text>
+<rect x="122" y="726" width="16" height="12" rx="3" fill="#f76707"/>
+<text x="144" y="736" font-size="10.5" font-weight="500" fill="#495057" text-anchor="start">3V3</text>
+<rect x="220" y="726" width="16" height="12" rx="3" fill="#212529"/>
+<text x="242" y="736" font-size="10.5" font-weight="500" fill="#495057" text-anchor="start">GND</text>
+<rect x="318" y="726" width="16" height="12" rx="3" fill="#1971c2"/>
+<text x="340" y="736" font-size="10.5" font-weight="500" fill="#495057" text-anchor="start">BCLK</text>
+<rect x="416" y="726" width="16" height="12" rx="3" fill="#2f9e44"/>
+<text x="438" y="736" font-size="10.5" font-weight="500" fill="#495057" text-anchor="start">LRCLK</text>
+<rect x="514" y="726" width="16" height="12" rx="3" fill="#9c36b5"/>
+<text x="536" y="736" font-size="10.5" font-weight="500" fill="#495057" text-anchor="start">data micro</text>
+<rect x="612" y="726" width="16" height="12" rx="3" fill="#c2255c"/>
+<text x="634" y="736" font-size="10.5" font-weight="500" fill="#495057" text-anchor="start">data ampli</text>
+<rect x="710" y="726" width="16" height="12" rx="3" fill="#f2b705"/>
+<text x="732" y="736" font-size="10.5" font-weight="500" fill="#495057" text-anchor="start">PWM</text>
+</svg>
