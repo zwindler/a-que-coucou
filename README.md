@@ -79,43 +79,39 @@ Et la position physique des broches sur le header (pour ne pas se tromper au bra
 
 ![Header GPIO 40 broches - broches utilisées en couleur](images/cablage_header.png)
 
-**Servo SG90**
+Le détail broche par broche (à cocher pendant le branchement) :
 
-| Fil servo | Broche RPi |
-|---|---|
-| VCC | 5V (broche 2) |
-| GND | GND (broche 14) |
-| Signal | GPIO13 / PWM (broche 33) |
-
-**Micro INMP441 (I2S, entrée audio)**
-
-| Broche INMP441 | Broche RPi |
-|---|---|
-| VDD | 3.3V (broche 1) |
-| GND | GND (broche 9) |
-| SCK (BCLK) | GPIO18 (broche 12), via breadboard |
-| WS (LRCLK) | GPIO19 (broche 35), via breadboard |
-| SD (DOUT) | GPIO20 (broche 38) |
+| Composant | Broche | Broche RPi |
+|---|---|---|
+| **Servo SG90** | VCC | 5V (broche 2) |
+| | GND | GND (broche 14) |
+| | Signal | GPIO13 / PWM (broche 33) |
+| **Micro INMP441** (I2S) | VDD | 3.3V (broche 1) |
+| | GND | GND (broche 9) |
+| | SCK (BCLK) | GPIO18 (broche 12), via breadboard |
+| | WS (LRCLK) | GPIO19 (broche 35), via breadboard |
+| | SD (DOUT) | GPIO20 (broche 38) |
+| **Ampli MAX98357A** (I2S) | Vin | 5V (broche 4) |
+| | GND | GND (broche 6) |
+| | BCLK | GPIO18 (broche 12), via breadboard |
+| | LRC | GPIO19 (broche 35), via breadboard |
+| | DIN | GPIO21 (broche 40) |
+| | SD | 3.3V (broche 17), pour activer la sortie |
+| | Speaker + / - | Haut-parleur 4Ω 3W |
 
 Si votre module INMP441 a une broche `L/R`, reliez-la à GND (canal gauche).
-
-**Ampli MAX98357A (I2S, sortie audio)**
-
-| Broche MAX98357A | Broche RPi |
-|---|---|
-| Vin | 5V (broche 4) |
-| GND | GND (broche 6) |
-| BCLK | GPIO18 (broche 12), via breadboard |
-| LRC | GPIO19 (broche 35), via breadboard |
-| DIN | GPIO21 (broche 40) |
-| SD | 3.3V (broche 17), pour activer la sortie |
-| Speaker + / - | Haut-parleur 4Ω 3W |
 
 **Le point important** : les deux horloges I2S, BCLK (GPIO18) et LRCLK (GPIO19), doivent être reliées **à la fois** au micro et à l'ampli. Un câble Dupont ne se dédoublant pas, on passe par la breadboard pour répartir chacune de ces deux lignes vers les deux composants.
 
 Les overlays nécessaires (`googlevoicehat-soundcard` pour l'I2S et `pwm-2chan` pour le servo) sont ajoutés dans `/boot/firmware/config.txt` par `setup.sh`.
 
 ![](images/cablage_moche.jpg)
+
+## Mécanisme (pignon-crémaillère)
+
+Le servo ne fait qu'un mouvement semi-circulaire ; pour faire sortir l'œuf **tout droit**, un pignon fixé sur son axe entraîne une crémaillère, convertissant la rotation en translation verticale. Les pièces sont paramétriques en OpenSCAD (`cad/pinion.scad`, `cad/rack.scad`).
+
+![Principe pignon-crémaillère : la rotation du servo est convertie en montée verticale de l'œuf](images/mecanisme_schema.png)
 
 ## Installation
 
@@ -141,6 +137,10 @@ Le service systemd démarre automatiquement au boot. Déployer une nouvelle vers
 ## Entraînement du modèle
 
 Le modèle de wake word "ah que coucou" est entraîné à partir de voix synthétiques générées par Coqui TTS (XTTS v2), avec augmentation audio et exemples négatifs.
+
+En amont, chaque extrait sonore est transformé en mel-spectrogramme (représentation temps-fréquence) avant d'alimenter le modèle :
+
+![Mel-spectrogramme de « ah que coucou »](images/mel_spectrogram.png)
 
 ```bash
 # Génération des voix TTS (nécessite GPU)

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="540" viewBox="0 0 720 540" font-family="Helvetica,Arial,sans-serif">
+<rect width="720" height="540" fill="#fff"/>
+<defs><marker id="ah" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#111"/></marker></defs>
+<text x="24" y="34" font-size="20" font-weight="700" fill="#111" text-anchor="start">Du mouvement circulaire au mouvement linéaire</text>
+<text x="24" y="56" font-size="13" font-weight="400" fill="#868e96" text-anchor="start">le système pignon-crémaillère</text>
+<line x1="70" y1="210" x2="650" y2="210" stroke="#adb5bd" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="74" y="202" font-size="12" font-weight="500" fill="#868e96" text-anchor="start">haut de la boîte</text>
+<rect x="306" y="150" width="30" height="290" rx="4" fill="#ffe8cc" stroke="#e8590c" stroke-width="2"/>
+<path d="M306,162 L306,180 L291,171 Z" fill="#ffe8cc" stroke="#e8590c" stroke-width="2"/>
+<path d="M306,192 L306,210 L291,201 Z" fill="#ffe8cc" stroke="#e8590c" stroke-width="2"/>
+<path d="M306,222 L306,240 L291,231 Z" fill="#ffe8cc" stroke="#e8590c" stroke-width="2"/>
+<path d="M306,252 L306,270 L291,261 Z" fill="#ffe8cc" stroke="#e8590c" stroke-width="2"/>
+<path d="M306,282 L306,300 L291,291 Z" fill="#ffe8cc" stroke="#e8590c" stroke-width="2"/>
+<path d="M306,312 L306,330 L291,321 Z" fill="#ffe8cc" stroke="#e8590c" stroke-width="2"/>
+<path d="M306,342 L306,360 L291,351 Z" fill="#ffe8cc" stroke="#e8590c" stroke-width="2"/>
+<path d="M306,372 L306,390 L291,381 Z" fill="#ffe8cc" stroke="#e8590c" stroke-width="2"/>
+<path d="M306,402 L306,420 L291,411 Z" fill="#ffe8cc" stroke="#e8590c" stroke-width="2"/>
+<text x="354" y="250" font-size="14" font-weight="700" fill="#e8590c" text-anchor="start">crémaillère</text>
+<text x="354" y="268" font-size="11" font-weight="400" fill="#868e96" text-anchor="start">(tige dentée)</text>
+<ellipse cx="321.0" cy="112" rx="38" ry="48" fill="#fff9db" stroke="#f59f00" stroke-width="2"/>
+<text x="321.0" y="118" font-size="15" font-weight="700" fill="#b8860b" text-anchor="middle">œuf</text>
+<polygon points="201,257 219,257 210,241" fill="#d0ebfb" stroke="#1971c2" stroke-width="2" stroke-linejoin="round" transform="rotate(0.0 210 330)"/>
+<polygon points="201,257 219,257 210,241" fill="#d0ebfb" stroke="#1971c2" stroke-width="2" stroke-linejoin="round" transform="rotate(25.714285714285715 210 330)"/>
+<polygon points="201,257 219,257 210,241" fill="#d0ebfb" stroke="#1971c2" stroke-width="2" stroke-linejoin="round" transform="rotate(51.42857142857143 210 330)"/>
+<polygon points="201,257 219,257 210,241" fill="#d0ebfb" stroke="#1971c2" stroke-width="2" stroke-linejoin="round" transform="rotate(77.14285714285714 210 330)"/>
+<polygon points="201,257 219,257 210,241" fill="#d0ebfb" stroke="#1971c2" stroke-width="2" stroke-linejoin="round" transform="rotate(102.85714285714286 210 330)"/>
+<polygon points="201,257 219,257 210,241" fill="#d0ebfb" stroke="#1971c2" stroke-width="2" stroke-linejoin="round" transform="rotate(128.57142857142858 210 330)"/>
+<polygon points="201,257 219,257 210,241" fill="#d0ebfb" stroke="#1971c2" stroke-width="2" stroke-linejoin="round" transform="rotate(154.28571428571428 210 330)"/>
+<polygon points="201,257 219,257 210,241" fill="#d0ebfb" stroke="#1971c2" stroke-width="2" stroke-linejoin="round" transform="rotate(180.0 210 330)"/>
+<polygon points="201,257 219,257 210,241" fill="#d0ebfb" stroke="#1971c2" stroke-width="2" stroke-linejoin="round" transform="rotate(205.71428571428572 210 330)"/>
+<polygon points="201,257 219,257 210,241" fill="#d0ebfb" stroke="#1971c2" stroke-width="2" stroke-linejoin="round" transform="rotate(231.42857142857144 210 330)"/>
+<polygon points="201,257 219,257 210,241" fill="#d0ebfb" stroke="#1971c2" stroke-width="2" stroke-linejoin="round" transform="rotate(257.14285714285717 210 330)"/>
+<polygon points="201,257 219,257 210,241" fill="#d0ebfb" stroke="#1971c2" stroke-width="2" stroke-linejoin="round" transform="rotate(282.8571428571429 210 330)"/>
+<polygon points="201,257 219,257 210,241" fill="#d0ebfb" stroke="#1971c2" stroke-width="2" stroke-linejoin="round" transform="rotate(308.57142857142856 210 330)"/>
+<polygon points="201,257 219,257 210,241" fill="#d0ebfb" stroke="#1971c2" stroke-width="2" stroke-linejoin="round" transform="rotate(334.2857142857143 210 330)"/>
+<circle cx="210" cy="330" r="74" fill="#d0ebfb" stroke="#1971c2" stroke-width="2.5"/>
+<circle cx="210" cy="330" r="16" fill="#fff" stroke="#1971c2" stroke-width="2"/>
+<circle cx="210" cy="330" r="4" fill="#1971c2"/>
+<text x="210" y="438" font-size="14" font-weight="700" fill="#1971c2" text-anchor="middle">pignon</text>
+<text x="210" y="456" font-size="11" font-weight="400" fill="#868e96" text-anchor="middle">(fixé sur l'axe du SG90)</text>
+<path d="M288,258 A 106 106 0 0 0 132,258" fill="none" stroke="#111" stroke-width="2.6" marker-end="url(#ah)"/>
+<text x="92" y="338" font-size="12" font-weight="600" fill="#111" text-anchor="end">rotation</text>
+<text x="92" y="354" font-size="12" font-weight="600" fill="#111" text-anchor="end">du servo</text>
+<line x1="470" y1="380" x2="470" y2="172" stroke="#c2255c" stroke-width="3"/>
+<polygon points="461,172 479,172 470,156" fill="#c2255c"/>
+<text x="484" y="250" font-size="13" font-weight="700" fill="#c2255c" text-anchor="start">l'œuf monte</text>
+<text x="484" y="268" font-size="13" font-weight="700" fill="#c2255c" text-anchor="start">tout droit</text>
+<text x="24" y="516" font-size="12" font-weight="400" fill="#495057" text-anchor="start">Le pignon (sur l'axe du servo) tourne ; ses dents engrènent la crémaillère, qui ne peut que coulisser verticalement.</text>
+</svg>
